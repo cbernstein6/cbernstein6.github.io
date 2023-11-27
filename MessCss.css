@@ -1,0 +1,199 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+font-family: "Open Sans", sans-serif;
+background-size: cover;
+color: #333;
+text-align: center;
+margin: 0;
+  padding: 0;
+  
+}
+
+
+
+.fontedtitle {
+  font-family: 'Gotham', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, 4px 4px 0 #333;
+  font-size: 3em;
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.subtitle {
+  
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: #000; /* your desired text color */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* white outline */
+}
+
+.subt{
+  font-family: 'Baloo 2', cursive;
+  color: #555555; /* Gray color for a professional, clean look */
+  font-size: 22px; /* Setting font size to 22px but feel free to change it */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.holiday-section {
+  background: url(holiday_cover.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh; /* change this to fit your need */
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.holiday-section .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.holiday-section .shop-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.holiday-section .shop-button:hover {
+  background-color: grey;
+}
+
+.shop-button{
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* media query for smaller screens */
+  
+
+
+
+
+
+ @media screen and (max-width: 767px) {
+  /* Mobile styles here */
+  body {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  
+  .gallery-container {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+  
+  .gallery-column {
+    flex-basis: calc(50% - 10px);
+    padding: 0 5px;
+    height: 200px;
+  }
+  
+  .gallery-column img {
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  
+  .fontedtitle{
+    font-size: 30px;
+    
+  }
+
+  .subtitle{
+    font-size: 15px;
+  
+  }
+
+  
+
+  
+  .text-overlay {
+    border-radius: 0;
+  }
+  
+  .text-overlay p {
+    font-size: 1rem;
+  }
+}
+  
+
+  
+  
+  

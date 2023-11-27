@@ -1,0 +1,49 @@
+.gallery-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .gallery-column {
+    position: relative;
+    flex: 1 1 auto;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .gallery-column img {
+    width: auto;
+    max-height: 100vh;
+    max-width: 100vw;
+    object-fit: cover;
+    transition: transform 0.2s linear;
+  }
+
+  .gallery-column:hover img {
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* put the words in the middle of the image vertically */
+    left: 50%; /* put the words in the middle of the image horizontally */
+    transform: translate(-50%, -50%); /* center the text exactly at the middle */
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.text-overlay p {
+    font-size: 35px; /* increase the text size to make it more obvious */
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* black outline */
+}
+  
+.gallery-column:hover .text-overlay {
+    visibility: visible;
+}
+

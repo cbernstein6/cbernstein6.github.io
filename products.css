@@ -1,0 +1,38 @@
+.gallery-section {
+  margin-top: 50px;
+}
+
+.gallery-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px; /* Add negative margin to offset padding on columns */
+  max-height: 400px; /* Set a maximum height for each row */
+  overflow: hidden; /* Hide any content that goes beyond the row height */
+}
+
+.gallery-column {
+  flex: 1;
+  padding: 0 10px; /* Add padding to columns */
+  height: 300px; /* Set a fixed height for all columns */
+}
+
+.gallery-column img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* Scale the image to fill the container while maintaining its aspect ratio */
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-column img:hover {
+  transform: scale(1.15);
+  border-radius: 15px;
+  transform-origin: center;
+}

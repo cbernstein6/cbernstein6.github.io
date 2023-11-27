@@ -1,0 +1,321 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon City - Event Form</title>
+    <meta name="description" content="We are located in East Boston, and we offer latex and foil balloons, balloon bouquets, balloon decorations, and balloon delivery services!">
+    <link rel="stylesheet" type="text/css" href="MessCss.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="message.css">
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" /><!--google font-->
+
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+          <a href="index.html"><img src="logo.png" alt="Balloon City Logo"></a>
+          <a href="https://www.instagram.com/ballooncityboston/" target="_blank"><img src="insta.png" alt="Instagram" class="insta-logo"></a>
+          <a href="https://www.facebook.com/BalloonCityBoston/" target="_blank"><img src="facebook.png" alt="Facebook" class="facebook-logo"></a>
+          <a href="https://twitter.com/BalloonCityBost/" target="_blank"><img src="twitterw.png" alt="Twitter" class="twitter-logo"></a>
+          <a href="https://www.yelp.com/biz/balloon-city-of-boston-boston" target="_blank"><img src="yelp.png" alt="Yelp" class="yelp-logo"></a>
+      </div>
+      <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" id="productsLabel">Products</a>
+                <div class="dropdown-content">
+                    <a href="bouquets.html">Bouquets</a>
+                    <a href="center.html">Centerpieces</a>
+                    <a href="topiary.html">Topiaries</a>
+                    <a href="arches.html">Arches</a>
+                    <a href="walls.html">Walls</a>
+                    <a href="column.html">Columns</a>
+                    <a href="organics.html">Organics</a>
+                    <a href="holidays.html">Holiday Decor</a>
+                    <a href="Nonlatex.html">Non-latex</a>
+                    <a href="sports.html">Sports</a>
+                    <a href="seasons.html">Seasons</a>
+                </div>
+            </li>
+            
+            <li><a href="aboutus.html">About Us</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Contact Us</a>
+                <div class="dropdown-content">
+                    <a href="contactus.html">Contact Info</a>
+                    <a href="message.html">Send Us a Message</a>
+                    <a href="eventform.html">Event Form</a>
+                </div>
+            </li>
+            <li><a href="tel:617-567-9114">617-567-9114</a></li>
+        </ul>
+    </nav>
+    
+  </header>
+    
+      <h2 class="fontedtitle" style="color:#E82127;">Event Form</h2>
+      
+      
+      <form action="https://formspree.io/f/mqkovjle" method="POST">
+        <h1 id="contact_title">Event Details</h1>
+        
+        <!-- Personal Information -->
+        <h2 style="margin-bottom: auto;">Personal Information</h2>
+        
+        
+    
+        <div class="form-row row_ten">
+          <div class="form-field long-input">
+            <label for="name" style="margin-left: 13px;">Name*</label>
+            <input type="text" id="name" name="name" required><br>
+          </div>
+          <div class="form-field long-input">
+            <label for="company" style="margin-left: 13px;">Company Name (If Applicable)</label>
+            <input type="text" id="company" name="company">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field long-input">
+            <label for="email" style="margin-left: 13px;">Email Address*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        
+        
+        
+        <div class="form-field long-input">
+          <label for="phone" style="margin-left: 13px;">Phone Number*</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div></div>
+        
+        <!-- Event Details -->
+        <h2 style="margin-top: 50px; margin-bottom: auto;">Event Details</h2>
+        
+        <div class="form-row">
+          <div class="form-field medium-input">
+            <label for="location" style="margin-left: 5px;">Event Location Name</label>
+            <input type="text" id="location" name="location">
+          </div>
+          
+          <div class="form-field medium-input">
+            <label for="start" style="margin-left: 5px;">Event Start Date And Time*</label>
+            <input type="datetime-local" id="start" name="start" required>
+          </div>
+          
+          <div class="form-field medium-input">
+            <label for="end" style="margin-left: 5px;">Event End Date And Time</label>
+            <input type="datetime-local" id="end" name="end">
+          </div>
+        </div>
+          
+        </div>
+    
+        <div class="form-row">
+          <div class="form-field short-input">
+            <label for="address">Event Address*</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+        
+          <div class="form-field short-input">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+          </div>
+        
+          <div class="form-field short-input">
+            <label for="state">State/Province/Region/State</label>
+            <input type="text" id="state" name="state">
+          </div>
+        
+        <div class="form-field short-input">
+          <label for="zip">ZIP/Postal Code/Zip Code*</label>
+          <input type="text" id="zip" name="zip" required>
+        </div>
+      </div>
+        
+      
+        <!-- Decor Details -->
+        <h2 style="margin-bottom: auto; margin-top: 50px;">Decor Details</h2>
+        
+        <div class="form-row">
+          <div class="form-field long-input">
+            <label for="event_type" style="margin-left: 13px;">What Type Of Event Are You Planning?*</label>
+            <input type="text" id="event_type" name="event_type" required>
+          </div>
+        <div class="form-field long-input">
+          <label for="color_scheme" style="margin-left: 13px;">What is your desired color scheme?</label>
+          <input type="text" id="color_scheme" name="color_scheme">
+        </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-field medium-input">
+            <label for="budget" style="margin-left: 5px;">What Is Your Budget?*</label>
+            <input type="text" id="budget" name="budget" required>
+          </div>
+        
+        
+        
+          <div class="form-field medium-input">
+            <label for="place" style="margin-left: 15px;">Is This Event Inside Or Outside?*</label>
+            <select id="place" name="place" required>
+              <option value="indoor">Indoor</option>
+              <option value="outdoor">Outdoor</option>
+              <option value="both">Both</option>
+            </select>
+          </div>
+        
+          <div class="form-field medium-input">
+            <label for="delivery" style="margin-left: 15px;">Is This For Pickup or Delivery?*</label>
+            <select id="delivery" name="delivery" required>
+              <option value="pickup">Pickup</option>
+              <option value="delivery">Delivery</option>
+            </select>
+          </div>
+        </div>
+        
+        
+        
+        <div class="form-field full-input">
+          <label for="vision" style="margin-left: 53px;">Extra Details</label>
+          <textarea id="vision" name="vision"></textarea>
+        </div>
+        
+        <div class="form-field full-input" style="margin-top: 30px;">
+          <label for="interest" style="margin-left: auto; margin-right: auto; margin-top: 5px;">Check all that you may be interested in:*</label>
+          <div class="checkbox-row">
+            <input type="checkbox" id="bouquet" name="interest" value="Bouquet"> Bouquet
+            <input type="checkbox" id="centerpiece" name="interest" value="Centerpiece"> Centerpiece
+            <input type="checkbox" id="topiary" name="interest" value="Topiary"> Topiary
+            <input type="checkbox" id="arch" name="interest" value="Arch"> Arch
+            <input type="checkbox" id="walls" name="interest" value="Walls"> Walls
+            <input type="checkbox" id="columns" name="interest" value="Columns"> Columns
+            <input type="checkbox" id="organics" name="interest" value="Organics"> Organics
+            <input type="checkbox" id="holidayDecor" name="interest" value="Holiday Decor"> Holiday Decor
+            <input type="checkbox" id="nonLatex" name="interest" value="Non-latex"> Non-latex
+          </div>
+        </div>
+        
+        
+        <div class="form-field">
+          <input type="submit" value="Submit">
+        </div>
+        
+        </form>
+      
+    
+        </body>
+        <footer>
+          <div class="wrapper">
+            <div class="top-row">
+              <div class="footer-logo">
+                <a href="index.html"><img src="logo.png" alt="Balloon City Logo" style="width: 250px; height: auto;"></a>        </div>
+              <div class="social-media">
+                  <a href="https://www.instagram.com/ballooncityboston/" target="_blank" class="social-media-icon"><img src="insta.png" alt="Instagram" class="insta-logo"></a>
+                  <a href="https://www.facebook.com/BalloonCityBoston/" target="_blank" class="social-media-icon"><img src="facebook.png" alt="Facebook" class="facebook-logo"></a>
+                  <a href="https://twitter.com/BalloonCityBost/" target="_blank" class="social-media-icon"><img src="twitterw.png" alt="Twitter" class="twitter-logo"></a>
+                  <a href="https://www.yelp.com/biz/balloon-city-of-boston-boston" target="_blank" class="social-media-icon"><img src="yelp.png" alt="Yelp" class="yelp-logo"></a>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li class="footer-dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Products</a>
+                    <div class="footer-dropdown-content">
+                      <a href="bouquets.html">Bouquets</a>
+                      <a href="center.html">Centerpieces</a>
+                      <a href="topiary.html">Topiaries</a>
+                      <a href="arches.html">Arches</a>
+                      <a href="walls.html">Walls</a>
+                      <a href="column.html">Columns</a>
+                      <a href="organics.html">Organics</a>
+                      <a href="holidays.html">Holiday Decor</a>
+                      <a href="Nonlatex.html">Non-latex</a>
+                      <a href="sports.html">Sports</a>
+                    </div>
+                  </li>
+                  <li class="footer-dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Contact Us</a>
+                    <div class="footer-dropdown-content">
+                      <a href="contactus.html">Contact Info</a>
+                      <a href="message.html">Send Us a Message</a>
+                      <a href="eventform.html">Event Form</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+           </div>
+        </div>
+      
+        <div class="bottom-row">
+          <div class="contact-info">
+              <h4>Contact Us:</h4>
+              <p>995 Bennington Street, East Boston, MA 02128</p>
+              <p>Email: <a href="mailto:sales@ballooncityboston.com">sales@ballooncityboston.com</a></p>
+              <p>Phone: <a href="tel:617-567-9114">617-567-9114</a></p>
+              <p>Fax: <a href="fax:617-567-3633">617-567-3633</a></p>
+          </div>
+        </div>
+      </footer>
+      
+      
+      
+        
+      <!--mobile hamburger-->
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          var hamburger = document.querySelector('.hamburger');
+          var nav = document.querySelector('nav');
+          hamburger.addEventListener('click', function() {
+            nav.style.display = (nav.style.display == 'none' || nav.style.display == '') ? 'flex' : 'none';
+            hamburger.classList.toggle('change');
+          });
+        });
+      
+      
+      
+      
+      
+      
+        var productsDropdown = document.querySelector('.dropdown .dropbtn[id="productsLabel"]');
+      var contactUsLabel = document.querySelector('.dropdown .dropbtn:not([id="productsLabel"])');
+      
+      productsDropdown.addEventListener('click', function(event) {
+          // Toggle the visibility of "Contact Us"
+          contactUsLabel.classList.toggle('hide');
+          
+          // Stop the event from propagating up to the document
+          event.stopPropagation();
+      });
+      
+      // Click event for the entire document
+      document.addEventListener('click', function(event) {
+          // If "Products" dropdown is open and we click outside it, show the "Contact Us" label
+          if(contactUsLabel.classList.contains('hide')){
+              contactUsLabel.classList.remove('hide');
+          }
+      });
+      
+      // Prevent the dropdown content clicks from propagating up to the document (Optional)
+      var contactUsContent = document.querySelector('.dropdown .dropdown-content');
+      contactUsContent.addEventListener('click', function(event) {
+          event.stopPropagation();
+      });
+      
+      
+      
+      </script>
+      </html>

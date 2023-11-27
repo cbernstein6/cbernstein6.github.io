@@ -1,0 +1,892 @@
+/* Desktop styles */
+header {
+  top: 0;
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 250px;
+}
+
+
+
+header nav {
+  margin-right: 50px;
+  
+  
+}
+
+header nav ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin-left: 40px;
+  
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: rgb(0, 0, 148);
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+.dropdown {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  border-bottom: 10px solid transparent; /* Invisible bridge */
+  margin-top: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  left: 50%; /* Center the dropdown */
+  transform: translateX(-50%); /* Center the dropdown */
+  flex-direction: column;
+  
+}
+
+.dropdown-content a {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.dropdown-content a:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+
+.dropdown .dropbtn::after {
+  content: '';
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 5px; /* Adjust to suit */
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropbtn::after {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+
+
+
+
+
+
+.insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.insta-logo:hover {
+  cursor: pointer;
+  content: url(rainbow_insta.jpeg);
+  transform: scale(1.12);
+}
+
+.yelp-logo{
+  transform: scale(1.1);
+  margin-left: 2px;
+}
+
+.yelp-logo:hover{
+  cursor: pointer;
+  content: url(redYelp.png);
+  transform: scale(1.25);
+}
+
+.facebook-logo {
+  transform: scale(1.12);
+}
+
+.facebook-logo:hover {
+  cursor: pointer;
+  content: url(blue_facebook.jpeg);
+  transform: scale(1.2);
+}
+
+.twitter-logo {
+  transform: scale(1.22);
+}
+
+.twitter-logo:hover {
+  cursor: pointer;
+  content: url(twitterb.png);
+  transform: scale(1.6);
+  transition: 0.3s;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.wrapper {
+  width: 100%;
+  border-bottom: 4px solid black;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+
+.logo-and-socials, footer nav {
+  display: flex;
+  align-items: center;
+}
+
+footer nav ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav li {
+  margin: 10px 20px;
+}
+
+footer nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  color: #0070c9;
+}
+
+footer nav a:hover {
+  color: rgb(0, 0, 148);
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-row {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.contact-info h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.contact-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-right: 20px;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info p:last-child {
+  margin-left: 20px;
+}
+
+.social-media-icon {
+  margin-right: 15px;
+}
+
+.social-media {
+  margin-right: 20px;
+}
+
+
+.dropbtn{
+  margin-top: 0; /* adjust as needed */
+    margin-bottom: 0; /* adjust as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  z-index: 20;
+  margin-top: 10px;
+}
+
+.hamburger span {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+
+.hamburger span:nth-child(1) {
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+}
+
+.hamburger span:nth-child(2) {
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.hamburger span:nth-child(3) {
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+  
+}
+
+.hamburger.change span:nth-child(1) {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.change span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.change span:nth-child(3) {
+  transform: rotate(45deg) translate(-9px, -6px);
+}
+
+
+
+.footer-dropdown {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  margin-top: 0px; /* Add this line */
+}
+
+.footer-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  left: 50%; 
+  bottom: 110%; /* Adjust this line */
+  transform: translateX(-50%);
+  flex-direction: column;
+}
+
+.footer-dropdown-content a {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-dropdown-content a:last-child {
+  margin-bottom: 0;
+}
+
+.footer-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.footer-dropdown:hover .footer-dropdown-content {
+  display: flex;
+}
+
+
+.footer-dropdown .dropbtn::after {
+  content: '';
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg); /* Adjust this line */
+  margin-left: 5px; 
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-dropdown:hover .dropbtn::after {
+  transform: rotate(-220deg); /* Adjust this line */
+}
+
+ul.holiday-style {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul.holiday-style li {
+  display: inline;
+  margin: 0 1em;
+}
+
+ul.holiday-style li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+ul.holiday-style li a:hover {
+  color: rgb(0, 0, 148);
+  text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 1400px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px; /* Added margin */
+    margin-bottom: 5px; /* Added margin */
+}
+
+header img {
+    width: 200px; /* Made the logo slightly bigger */
+}
+
+.logo-and-socials img {
+    width: 150px; 
+}
+
+nav {
+    margin-right: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;  /* Changed from space-around to space-between for a tighter fit. */
+    flex-wrap: wrap;
+    padding: 0 5px; /* Add padding on left and right to ensure the side links don't touch the edge. */
+}
+
+nav li {
+    margin-left: 5px; /* Reduced margin for individual links. */
+    margin-right: 5px; 
+}
+
+nav a {
+    font-size: 14px; /* Adjust if the font size is making them too wide. */
+    padding: 0 5px; /* Adjust padding on links if necessary. */
+}
+
+.dropdown-content {
+    z-index: 10;
+    /* rest of your styles */
+}
+
+ul.holiday-style li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+
+
+
+
+footer {
+  background-color: #f9f9f9; /* You can change this to any desired color */
+  padding: 20px 0;
+  font-family: Arial, sans-serif; /* Set the font to your preferred choice */
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer-logo {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  min-width: 50%;
+}
+
+.social-media {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media-icon img {
+  width: 30px; 
+  height: 30px;
+}
+
+nav {
+  flex: 3;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  position: relative;
+  list-style-type: none;
+}
+
+.footer-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  z-index: 1;
+  width: 200px;
+}
+
+.footer-dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.footer-dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.footer-dropdown:hover .footer-dropdown-content {
+  display: block;
+}
+
+.bottom-row {
+  border-top: 1px solid #e0e0e0;
+  padding: 20px 0;
+}
+
+.contact-info h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-info p, .contact-info a {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .dropdown .dropbtn:not([id="productsLabel"]).hide {
+    visibility: hidden; 
+    /* Using visibility:hidden instead of display:none to ensure layout remains unchanged */
+}
+
+
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  header nav {
+    display: none;
+    margin-right: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  header nav a {
+    font-size: 14px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .products-dropdown {
+    z-index: 0;
+}
+  
+  
+
+  
+}
+
+
+
+
+
+
+@media only screen and (max-width: 426px) {
+
+  header {
+    padding: 7px;  /* Adjusted padding */
+  }
+
+  header img {
+    width: 135px; /* Adjusted logo size */
+  }
+
+  header nav a, footer nav a, .contact-info a {
+    font-size: 13px;  /* Adjusted font size */
+  }
+
+  .yelp-logo {
+    margin-left: 7px;  /* Adjusted margin */
+  }
+
+  .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
+    width: 28px;  /* Adjusted icon sizes */
+    height: 28px;
+  }
+
+  .footer-logo {
+    width: 135px;  /* Adjusted logo size */
+    margin-right: 110px;  /* Adjusted margin */
+  }
+
+  footer {
+    padding: 7px;  /* Adjusted padding */
+  }
+
+  footer nav li {
+    margin: 0 4px;  /* Adjusted spacing between items */
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .contact-info h4 {
+    font-size: 17px;  /* Adjusted font size */
+  }
+
+  .social-media-icon {
+    margin-right: 12px;  /* Adjusted margin */
+  }
+
+  .social-media {
+    margin-bottom: 7px;  /* Adjusted margin */
+  }
+
+ 
+  
+
+
+
+
+
+
+  footer {
+    background-color: #bebebe;
+    color: #fff;
+  }
+
+  .wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-row, .bottom-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .social-media {
+    margin-top: 1rem;
+  }
+
+  .social-media-icon img {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 8px;
+  }
+
+  .contact-info h4, .contact-info p {
+    margin: 4px 0;
+  }
+
+
+  
+
+
+  /* ... Add or modify additional styles as needed ... */
+}
+
+
+
+@media only screen and (max-width: 321px) {
+
+  header {
+    padding: 5px;  /* Reduced padding */
+  }
+
+  header img {
+    width: 120px; /* Smaller logo for smaller devices */
+  }
+
+  header nav a, footer nav a, .contact-info a {
+    font-size: 12px;  /* Smaller font size */
+  }
+
+  .yelp-logo{
+    margin-left: 5px;  /* Reduced margin */
+  }
+
+  .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
+    width: 25px;  /* Slightly smaller icons */
+    height: 25px;
+  }
+
+  .footer-logo{
+    width: 120px;  /* Smaller logo for smaller devices */
+    margin-right: 100px;  /* Reduced margin */
+  }
+
+  footer {
+    padding: 5px;  /* Reduced padding */
+  }
+
+  footer nav li {
+    margin: 0 3px; /* Less spacing between items */
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .contact-info h4 {
+    font-size: 16px;  /* Slightly smaller font size */
+  }
+
+  .social-media-icon {
+    margin-right: 10px;  /* Reduced margin */
+  }
+
+  .social-media{
+    margin-bottom: 5px;  /* Reduced margin */
+  }
+
+  .dropdown-content {
+    /* Potentially other adjustments based on its content */
+  }
+
+  footer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 426px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+/* Top Row Styles */
+.top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo, .social-media {
+    margin-bottom: 20px;
+}
+
+.social-media-icon {
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+.footer-dropdown-content {
+    display: none;
+}
+
+.footer-dropdown:hover .footer-dropdown-content {
+    display: block;
+}
+
+/* Bottom Row Styles */
+.bottom-row {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+}

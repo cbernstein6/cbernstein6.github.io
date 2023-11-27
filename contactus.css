@@ -1,0 +1,326 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+
+.my-container {
+  max-width: 80vw;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-hours-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-details, .business-hours {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.contact-details p, .business-hours p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #E82127;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #AE1B1A;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+  margin-top: -220px; /* Adjust this value as needed */
+
+  align-items: center;
+}
+
+.centered-button button {
+  padding: 10px 20px;
+  background-color: #E82127;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.centered-button button:hover {
+  background-color: #ff5036;
+}
+
+.centered-button.orange-button button {
+  background-color: #ff8c00; /* This is a generic orange, change to desired orange color */
+  margin-top: 30px;
+}
+
+.centered-button.orange-button button:hover {
+  background-color: #ffb347;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wrapper {
+  margin: 20px 0;
+}
+
+.button-style {
+  
+  width: 180px; /* You can adjust this value to your needs */
+  height: 50px;
+}
+
+
+
+#map {
+  height: 400px;
+  width: 100%;
+  background: #333;
+  margin-bottom: 100px;
+  margin-top: -65px;
+  border-radius: 15px;  /* Add this line */
+  overflow: hidden;  /* Add this line */
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;  /* Add this line */
+}
+
+
+
+
+form {
+  background: #333;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; 
+}
+
+
+#contact_title {
+  color: #fff;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2, label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+}
+
+label {
+  text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="datetime-local"], textarea, select {
+  width: 90%;
+  padding: 15px 10px;  /* Adjust this value to change the height of the input fields */
+  border: 1px solid #666;
+  background: #000;
+  color: #fff;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 10%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #E82127;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #AE1B1A;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%;  /* Full width of each row should be 80% at maximum */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7.5px; /* Set the side margin to half of the desired gap to ensure the gap between elements is 15px */
+}
+
+.short-input {
+  width: calc(25% - 15px); /* Short input, 4 boxes per row */
+}
+
+.medium-input {
+  width: calc(33.3333% - 15px); /* Medium input, 3 boxes per row */
+}
+
+.long-input {
+  width: calc(50% - 15px); /* Long input, 2 boxes per row */
+}
+
+.full-input {
+  width: 100%; /* Full input, 1 box per row */
+}
+
+.checkbox-row {
+  
+  margin-top: 30px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-left: 20px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {  /* Small devices (portrait tablets and large phones, 600px and under) */
+  .my-container {
+    max-width: 100vw;
+    padding: 5px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .contact-hours-box {
+    flex-direction: column;
+  }
+
+  .contact-details, .business-hours {
+    margin: 10px 0;
+  }
+
+  .centered-button {
+    margin-top: -100px; /* Adjust this value as needed */
+  }
+
+  .centered-button button {
+    font-size: 16px;
+  }
+
+  #map {
+    margin-top: -30px;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="datetime-local"], textarea, select {
+    padding: 10px 5px;  
+  }
+
+  input[type="submit"] {
+    width: 30%;
+  }
+
+  .form-row {
+    max-width: 90%;
+  }
+
+  .short-input, .medium-input, .long-input, .full-input {
+    width: 100%; 
+  }
+  .business-hours{
+    margin-bottom: 75px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {  /* Medium devices (landscape tablets, 601px and up) */
+  .my-container {
+    max-width: 90vw;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .centered-button {
+    margin-top: -150px; /* Adjust this value as needed */
+  }
+
+  .centered-button button {
+    font-size: 16px;
+  }
+
+  #map {
+    margin-top: -40px;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="datetime-local"], textarea, select {
+    padding: 10px 5px;  
+  }
+
+  input[type="submit"] {
+    width: 20%;
+  }
+
+  .form-row {
+    max-width: 85%;
+  }
+
+  .short-input {
+    width: calc(50% - 15px);
+  }
+
+  .medium-input, .long-input {
+    width: 100%; 
+  }
+}
+
+@media only screen and (min-width: 1023px) { /* Large devices (laptops/desktops, 1025px and up) */
+  .centered-button {
+    margin-top: -200px; /* Adjust this value as needed */
+  }
+  
+}

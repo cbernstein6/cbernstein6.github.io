@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="balloons,boston,balloon decorating, gift baskets, novelties, balloon bouquets, shining stars, party favors, balloon centerpieces, balloon decorations,custom imprinting ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon City - Home</title>
+    <meta name="description" content="We are located in East Boston, and we offer latex and foil balloons, balloon bouquets, balloon decorations, and balloon delivery services!">
+    <link rel="stylesheet" type="text/css" href="MessCss.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="carousel.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+
+<body>
+  <header>
+    <div class="header-logo">
+        <a href="index.html"><img src="logo.png" alt="Balloon City Logo"></a>
+        <a href="https://www.instagram.com/ballooncityboston/" target="_blank"><img src="insta.png" alt="Instagram" class="insta-logo"></a>
+        <a href="https://www.facebook.com/BalloonCityBoston/" target="_blank"><img src="facebook.png" alt="Facebook" class="facebook-logo"></a>
+        <a href="https://twitter.com/BalloonCityBost/" target="_blank"><img src="twitterw.png" alt="Twitter" class="twitter-logo"></a>
+        <a href="https://www.yelp.com/biz/balloon-city-of-boston-boston" target="_blank"><img src="yelp.png" alt="Yelp" class="yelp-logo"></a>
+    </div>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn" id="productsLabel">Products</a>
+              <div class="dropdown-content">
+                  <a href="bouquets.html">Bouquets</a>
+                  <a href="center.html">Centerpieces</a>
+                  <a href="topiary.html">Topiaries</a>
+                  <a href="arches.html">Arches</a>
+                  <a href="walls.html">Walls</a>
+                  <a href="column.html">Columns</a>
+                  <a href="organics.html">Organics</a>
+                  <a href="holidays.html">Holiday Decor</a>
+                  <a href="Nonlatex.html">Non-latex</a>
+                  <a href="sports.html">Sports</a>
+                  <a href="seasons.html">Seasons</a>
+              </div>
+          </li>
+          
+          <li><a href="aboutus.html">About Us</a></li>
+          
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Contact Us</a>
+              <div class="dropdown-content">
+                  <a href="contactus.html">Contact Info</a>
+                  <a href="message.html">Send Us a Message</a>
+                  <a href="eventform.html">Event Form</a>
+              </div>
+          </li>
+          <li><a href="tel:617-567-9114">617-567-9114</a></li>
+      </ul>
+  </nav>
+  
+</header>
+
+
+
+
+
+<body>
+<div class="intro_area">
+  <div class="slider" style="position: relative;">
+    <h2 class="fontedtitle" style="position: absolute; top: 15%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Welcome To Balloon City!</h2>
+    <h3 class="subtitle">Click through our pictures!</h3>
+    <img class="slider-image sty" src="new_org.jpeg" />
+    <div class="slider-buttons">
+      <div class="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 6l-7.5 9 7.5 9 1.5-1.106-6.441-7.894 6.441-7.894z"/></svg>
+      </div>
+      <div class="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6l-1.5 1.106 6.441 7.894-6.441 7.894 1.5 1.106 7.5-9z"/></svg>
+      </div>
+    </div>
+</div>
+
+
+
+
+   
+
+<script>
+  let imagesDesktop = [
+  'new_org.jpeg',
+  'pinkfront.jpg',
+  'slide_arch.jpeg',
+  'wall1.png',
+  'ceilings.jpg',
+];
+
+let imagesMobile = [
+  'new_org.jpeg',
+  'bouquet3.jpg',
+  'bouquet9.jpg',
+  'bouquet11.jpg',
+  'bouquet3.jpg',
+];
+
+let images = window.innerWidth <= 768 ? imagesMobile : imagesDesktop;
+
+let currentImageIndex = 0;
+let sliderImage = document.querySelector('.slider-image');
+let prevButton = document.querySelector('.prev');
+let nextButton = document.querySelector('.next');
+
+// Function to change image
+function changeImage() {
+  currentImageIndex = currentImageIndex < images.length - 1 ? currentImageIndex + 1 : 0;
+  sliderImage.style.transform = `scale(1.1)`;
+  setTimeout(() => {
+    sliderImage.src = images[currentImageIndex];
+    sliderImage.style.transform = `scale(1)`;
+  }, 400);
+}
+
+// Initial interval
+let imageSwapInterval = setInterval(changeImage, 10000);
+
+prevButton.addEventListener('click', () => {
+  currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : images.length - 1;
+  sliderImage.style.transform = `scale(1.1)`;
+  setTimeout(() => {
+    sliderImage.src = images[currentImageIndex];
+    sliderImage.style.transform = `scale(1)`;
+  }, 400);
+  
+  // Clear interval and restart it
+  clearInterval(imageSwapInterval);
+  imageSwapInterval = setInterval(changeImage, 10000);
+});
+
+nextButton.addEventListener('click', () => {
+  changeImage();
+  
+  // Clear interval and restart it
+  clearInterval(imageSwapInterval);
+  imageSwapInterval = setInterval(changeImage, 10000);
+});
+
+</script>
+
+
+
+
+
+
+
+
+<section class="gallery-section">
+  <h2 class="fontedtitle" style="color: rgb(242, 149, 35);">Our Portfolio</h2>
+  <div class="gallery-container">
+    <div class="gallery-row">
+
+      <div class="gallery-column" data-aos="fade-right">
+        <a href="bouquets.html">
+          <img src="bouquet_cover.png" alt="Bouquets">
+          <div class="text-overlay">
+            <p>Bouquets</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="gallery-column" data-aos="fade-up">
+        <a href="center.html">
+        <img src="center_cover.png" alt="Centerpieces">
+        <div class="text-overlay">
+            <p>Centerpieces</p>
+        </div>
+      </a>
+      </div>
+
+      <div class="gallery-column" data-aos="fade-left">
+        <a href="topiary.html">
+        <img src="topiary1.jpeg" alt="Topiaries">
+        <div class="text-overlay">
+            <p>Topiaries</p>
+        </div>
+      </a>
+      </div>
+    </div>
+
+    <div class="gallery-row">
+      <div class="gallery-column" data-aos="fade-up">
+        <a href="arches.html">
+          <img src="arch8.jpeg" alt="Bouquets">
+          <div class="text-overlay">
+            <p>Arches</p>
+          </div>
+      </a>
+      </div>
+      
+      <div class="gallery-column" data-aos="fade-down">
+        <a href="walls.html">
+        <img src="wall4.png" alt="Walls">
+        <div class="text-overlay">
+            <p>Walls</p>
+        </div>
+      </a>
+      </div>
+
+      <div class="gallery-column" data-aos="fade-down">
+        <a href="column.html">
+        <img src="outdoor12.1.jpg" alt="Columns">
+        <div class="text-overlay">
+            <p>Columns</p>
+        </div>
+      </a>
+      </div>
+
+      <div class="gallery-column" data-aos="fade-down">
+        <a href="organics.html">
+        <img src="organic_cover.png" alt="Organics">
+        <div class="text-overlay">
+            <p>Organics</p>
+        </div>
+      </a>
+      </div>
+
+    </div>
+      
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="holiday-section">
+  <div class="centered">Holiday Decor</div>
+  <button class="shop-button" onclick="window.location.href = 'holidays.html';">Shop Now</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="testimonials">
+  <div class="testimonials-container">
+    <h2 class="fontedtitle" style="color: rgb(255, 8, 0); margin-top: -40px;">What our customers are saying</h2>
+    <h3 class="test_subt">Scroll Through Our Reviews!</h3>
+    <a href="https://www.yelp.com/biz/balloon-city-of-boston-boston" target="_blank">
+        <img src="yelpword.png" alt="Yelp" class="yelp-word">
+    </a>
+    
+    <div class="testimonial">
+      <img src="tops.png" alt="Matt">
+      <p>"I walked in to get balloons for a birthday last minute and the gentlemen that helped me was extremely nice, explained to me some great options to consider, and arranged a nice balloon bouquet right on the spot. Fast and courteous , something you would never get at Party City and he was excited to help me. I beat the rush, as a couple other people walked in right after me today! Will definitely go back and order here again."</p>
+      <h3>2/15/21 Matt D.</h3>
+    </div>
+
+    <div class="testimonial">
+      <img src="arch2.png" alt="Tanya">
+      <p>"There are not enough words to adequately describe Balloon City, Christine and her staff, but I will try to do them justice.....I have used them for multiple family events (both large and small) and they have NEVER disappointed me. The staff is courteous and kind, always willing to go the extra mile to ensure I am getting exactly what I envision. Delivery is always on time, and set up is perfect. Whenever I walk in to the venue I am completely awestruck.....their balloon arrangements really help set the stage and mood for the occasion. Both young and old always comment on how pretty the balloon arrangements are, and how much they like them."</p>
+      <h3>6/21/21 Tanya F.</h3>
+    </div>
+
+    <div class="testimonial">
+      <img src="tops.png" alt="Vanessa">
+      <p>"Christine at Balloon City was fantastic to work with! Very helpful and thoughtful - So thoughtful, in fact, she brought up potential grants that may I may be eligible for for my small business while we were chatting. There were many great options to choose from. The balloons arrived right on time and they were gorgeous!!"</p>
+      <h3>3/24/21 Vanessa L.</h3>
+    </div>
+
+    <div class="testimonial">
+      <img src="150.png" alt="Joann">
+      <p>"The people who work here are so nice! I flew in from Florida after preordering a helium tank and accessories. They called me twice to confirm because of impending weather. They had everything ready to go for me because I was pressed for time. I will now only go to Balloon City for my party needs while in Boston. Thank you so much!"</p>
+      <h3>3/4/22 Joann W.</h3>
+    </div>
+
+    <div class="testimonial">
+      <img src="150.png" alt="Christine">
+      <p>"I cannot say enough about the EXCELLENT customer service! I had a small (for them) last minute order during provably their busiest season, and they were amazing! Helped us load the balloons, gave great instructions, were so helpful, and in general great to work with!"</p>
+      <h3>5/25/19 Christine M.</h3>
+    </div>
+
+    <div class="testimonial">
+      <img src="arch2.png" alt="Janis">
+      <p>"If I could give this establishment a 10, I would do so in a heartbeat. Balloon City offers old-time customer service...no having to send in your automated order--you can actually TALK to someone there and they will help you with your specialized order. I was calling them from California for same-day delivery in Boston, and once I placed the order, it was ready 15 minutes to be delivered. And the prices! so incredibly reasonable. Even though the prices and products are great, it's the customer service that is truly phenomenal. HIGHLY recommend for anyone in the Boston area!"</p>
+      <h3>10/15/20 Janis A.</h3>
+    </div>
+
+    
+
+</div>
+<div class="slider-arrows" style="margin-bottom: 100px;">
+    <button class="prev" onclick="prevTestimonial()">Prev</button>
+    <button class="next" onclick="nextTestimonial()">Next</button>
+</div>
+</section>
+  
+
+  <script>
+    var slideIndex = 1;
+    var autoSlider;
+    showTestimonial(slideIndex);
+    autoSlider = setTimeout(nextTestimonial, 30000);
+
+    function nextTestimonial() {
+        clearTimeout(autoSlider);
+        showTestimonial(slideIndex += 1);
+        autoSlider = setTimeout(nextTestimonial, 30000);
+    }
+
+    function prevTestimonial() {
+        clearTimeout(autoSlider);
+        showTestimonial(slideIndex -= 1);
+        autoSlider = setTimeout(nextTestimonial, 30000);
+    }
+
+    function showTestimonial(n) {
+        var i;
+        var testimonials = document.getElementsByClassName("testimonial");
+        if (n > testimonials.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = testimonials.length }
+        for (i = 0; i < testimonials.length; i++) {
+            testimonials[i].style.display = "none";
+            testimonials[i].style.opacity = "0";
+            testimonials[i].style.transform = "translateY(20px)";
+        }
+        testimonials[slideIndex-1].style.display = "block";
+        setTimeout(function() {
+            testimonials[slideIndex-1].style.transform = "translateY(0px)";
+            testimonials[slideIndex-1].style.opacity = "1";
+        }, 50);
+    }
+</script>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // animate only once when the element first comes into view
+      offset: 100, // set the offset to 100px to start the animation before the element comes into full view
+      duration: 1000 // set the duration of the animation to 1000ms (1 second)
+    });
+  </script>
+
+  
+  
+  </body>
+
+  <footer>
+    <div class="wrapper">
+      <div class="top-row">
+        <div class="footer-logo">
+          <a href="index.html"><img src="logo.png" alt="Balloon City Logo" style="width: 250px; height: auto;"></a>        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/ballooncityboston/" target="_blank" class="social-media-icon"><img src="insta.png" alt="Instagram" class="insta-logo"></a>
+            <a href="https://www.facebook.com/BalloonCityBoston/" target="_blank" class="social-media-icon"><img src="facebook.png" alt="Facebook" class="facebook-logo"></a>
+            <a href="https://twitter.com/BalloonCityBost/" target="_blank" class="social-media-icon"><img src="twitterw.png" alt="Twitter" class="twitter-logo"></a>
+            <a href="https://www.yelp.com/biz/balloon-city-of-boston-boston" target="_blank" class="social-media-icon"><img src="yelp.png" alt="Yelp" class="yelp-logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="footer-dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Products</a>
+              <div class="footer-dropdown-content">
+                <a href="bouquets.html">Bouquets</a>
+                <a href="center.html">Centerpieces</a>
+                <a href="topiary.html">Topiaries</a>
+                <a href="arches.html">Arches</a>
+                <a href="walls.html">Walls</a>
+                <a href="column.html">Columns</a>
+                <a href="organics.html">Organics</a>
+                <a href="holidays.html">Holiday Decor</a>
+                <a href="Nonlatex.html">Non-latex</a>
+                <a href="sports.html">Sports</a>
+              </div>
+            </li>
+            <li class="footer-dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Contact Us</a>
+              <div class="footer-dropdown-content">
+                <a href="contactus.html">Contact Info</a>
+                <a href="message.html">Send Us a Message</a>
+                <a href="eventform.html">Event Form</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+     </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="contact-info">
+        <h4>Contact Us:</h4>
+        <p>995 Bennington Street, East Boston, MA 02128</p>
+        <p>Email: <a href="mailto:sales@ballooncityboston.com">sales@ballooncityboston.com</a></p>
+        <p>Phone: <a href="tel:617-567-9114">617-567-9114</a></p>
+        <p>Fax: <a href="fax:617-567-3633">617-567-3633</a></p>
+    </div>
+  </div>
+</footer>
+
+
+
+  
+<!--mobile hamburger-->
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var hamburger = document.querySelector('.hamburger');
+    var nav = document.querySelector('nav');
+    hamburger.addEventListener('click', function() {
+      nav.style.display = (nav.style.display == 'none' || nav.style.display == '') ? 'flex' : 'none';
+      hamburger.classList.toggle('change');
+    });
+  });
+
+
+
+
+
+
+  var productsDropdown = document.querySelector('.dropdown .dropbtn[id="productsLabel"]');
+var contactUsLabel = document.querySelector('.dropdown .dropbtn:not([id="productsLabel"])');
+
+productsDropdown.addEventListener('click', function(event) {
+    // Toggle the visibility of "Contact Us"
+    contactUsLabel.classList.toggle('hide');
+    
+    // Stop the event from propagating up to the document
+    event.stopPropagation();
+});
+
+// Click event for the entire document
+document.addEventListener('click', function(event) {
+    // If "Products" dropdown is open and we click outside it, show the "Contact Us" label
+    if(contactUsLabel.classList.contains('hide')){
+        contactUsLabel.classList.remove('hide');
+    }
+});
+
+// Prevent the dropdown content clicks from propagating up to the document (Optional)
+var contactUsContent = document.querySelector('.dropdown .dropdown-content');
+contactUsContent.addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
+
+
+</script>
+  
+  
+
+</html>
