@@ -1,0 +1,99 @@
+.holiday-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.holiday-row a {
+  color: white;
+  text-decoration: none;
+}
+
+.holiday-title {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.christmas-title {
+  color: #ff0000; 
+}
+
+.stpatty-title {
+  color: #008000;
+}
+
+.valentines-title {
+  color: #ff69b4;
+}
+
+.july4th-title {
+  color: #003c7a; /* Navy blue color, representative of the American flag */
+  text-shadow: 2px 2px 4px #b22234; /* Shadow color, similar to the red stripes in the American flag */
+}
+
+.graduation-title {
+  color: #000000;
+}
+
+.octoberfest-title {
+  color: #ff9800;
+}
+
+.pride-title {
+  color: #e40303; /* Starting color from the Pride flag */
+  text-shadow: 2px 2px 4px #4cbb17; /* Ending color from the Pride flag */
+}
+
+.newyears-title {
+  color: #ffffff;
+}
+
+.halloween-title {
+  color: #ff8700; 
+}
+
+.easter-title {
+  color: #800080; /* This is a purple color, but feel free to change it */
+}
+
+.holiday {
+  display: none;
+}
+
+#Christmas {  /* This will set Christmas as the default holiday */
+  display: block;
+}
+
+#holidaySelect{
+  margin-bottom: 25px;
+}
+
+#holidaySelect{
+  margin-bottom: 25px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#holidaySelect:focus {
+  outline: none;
+  border-color: #2a9d8f;
+  box-shadow: 0 0 5px #2a9d8f;
+}
+
+#holidaySelect > option{
+  padding: 5px 10px;
+}
+
+#holidaySelect > option:nth-child(even){
+  background-color: #f5f5f5;
+}
+
+
+

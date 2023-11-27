@@ -1,0 +1,120 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+  }
+  
+
+form {
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+  }
+
+  h1, h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  h2, label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+  }
+  label {
+    text-align: left;
+  }
+
+  #contact_title {
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], input[type="datetime-local"], textarea, select {
+    width: 90%;
+    padding: 15px 10px;
+    border: 1px solid #666;
+    background: #000;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #E82127;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background: #AE1B1A;
+  }
+  
+/* Apply these styles to screens that are 480 pixels or smaller */
+@media screen and (max-width: 480px) {
+    /* Make the form fields take up the full width on small screens */
+    .short-input, .medium-input, .long-input {
+      width: 100%;
+    }
+  
+    /* Reduce the size of the submit button on smaller screens */
+    input[type="submit"] {
+      width: 80%;
+    }
+  
+    /* Adjust the font sizes for readability on small screens */
+    h1, h2 {
+      font-size: 1.2em;
+    }
+  
+    label {
+      font-size: 0.9em;
+    }
+  
+    input[type="text"], input[type="email"], input[type="tel"], input[type="datetime-local"], textarea, select {
+      font-size: 0.8em;
+      padding: 10px 5px;
+    }
+  
+    .checkbox-row input[type="checkbox"] {
+        margin-left: 10px;
+        max-width: 50%; /* Each checkbox takes up roughly 30% of the container width */
+        box-sizing: border-box;
+      }
+  
+    .form-row {
+      max-width: 100%;
+    }
+    .checkbox-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+      .checkbox-item {
+        width: 30%; /* Each checkbox item takes up roughly 30% of the container width */
+        box-sizing: border-box;
+      }
+  }
+  
