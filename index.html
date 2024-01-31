@@ -13,7 +13,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head> 
+    <link rel="preload" as="image" href="new_org.jpeg">
+  </head> 
 
 <body>
   <header>
@@ -73,9 +74,10 @@
 <body>
 <div class="intro_area">
   <div class="slider" style="position: relative;">
-    <h2 class="fontedtitle" style="position: absolute; top: 15%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Welcome To Balloon City!</h2>
+    <h2 class="fontedtitle" style="position: absolute; top: 15%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Welcome To Balloon City</h2>
+    <h2 class="fontedtitle" style="position: absolute; top: 23%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Of Boston Inc!</h2>
     <h3 class="subtitle">Click through our pictures!</h3>
-    <img class="slider-image sty" src="new_org.jpeg" />
+    <img class="slider-image sty" src="new_org.jpeg" alt="Organic Balloon" />
     <div class="slider-buttons">
       <div class="prev">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 6l-7.5 9 7.5 9 1.5-1.106-6.441-7.894 6.441-7.894z"/></svg>
@@ -163,7 +165,7 @@ nextButton.addEventListener('click', () => {
   <div class="gallery-container">
     <div class="gallery-row">
 
-      <div class="gallery-column" data-aos="fade-right">
+      <div class="gallery-column">
         <a href="bouquets.html">
           <img src="bouquet_cover.png" alt="Bouquets">
           <div class="text-overlay">
@@ -173,7 +175,7 @@ nextButton.addEventListener('click', () => {
       </div>
 
 
-      <div class="gallery-column" data-aos="fade-up">
+      <div class="gallery-column">
         <a href="center.html">
         <img src="center_cover.png" alt="Centerpieces">
         <div class="text-overlay">
@@ -182,7 +184,7 @@ nextButton.addEventListener('click', () => {
       </a>
       </div>
 
-      <div class="gallery-column" data-aos="fade-left">
+      <div class="gallery-column">
         <a href="topiary.html">
         <img src="topiary1.jpeg" alt="Topiaries">
         <div class="text-overlay">
@@ -193,7 +195,7 @@ nextButton.addEventListener('click', () => {
     </div>
 
     <div class="gallery-row">
-      <div class="gallery-column" data-aos="fade-up">
+      <div class="gallery-column">
         <a href="arches.html">
           <img src="arch8.jpeg" alt="Bouquets">
           <div class="text-overlay">
@@ -202,7 +204,7 @@ nextButton.addEventListener('click', () => {
       </a>
       </div>
       
-      <div class="gallery-column" data-aos="fade-down">
+      <div class="gallery-column">
         <a href="walls.html">
         <img src="wall4.png" alt="Walls">
         <div class="text-overlay">
@@ -211,7 +213,7 @@ nextButton.addEventListener('click', () => {
       </a>
       </div>
 
-      <div class="gallery-column" data-aos="fade-down">
+      <div class="gallery-column">
         <a href="column.html">
         <img src="outdoor12.1.jpg" alt="Columns">
         <div class="text-overlay">
@@ -220,7 +222,7 @@ nextButton.addEventListener('click', () => {
       </a>
       </div>
 
-      <div class="gallery-column" data-aos="fade-down">
+      <div class="gallery-column">
         <a href="organics.html">
         <img src="organic_cover.png" alt="Organics">
         <div class="text-overlay">
@@ -234,54 +236,10 @@ nextButton.addEventListener('click', () => {
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="holiday-section">
   <div class="centered">Holiday Decor</div>
   <button class="shop-button" onclick="window.location.href = 'holidays.html';">Shop Now</button>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <section id="testimonials">
@@ -382,13 +340,7 @@ nextButton.addEventListener('click', () => {
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true, // animate only once when the element first comes into view
-      offset: 100, // set the offset to 100px to start the animation before the element comes into full view
-      duration: 1000 // set the duration of the animation to 1000ms (1 second)
-    });
-  </script>
+
 
   
   

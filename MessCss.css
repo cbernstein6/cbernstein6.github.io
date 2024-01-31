@@ -36,15 +36,17 @@ margin: 0;
 .subtitle {
   
   position: absolute;
-  top: 200px;
+  top: 275px;
   left: 0;
   width: 100%;
   text-align: center;
   z-index: 1;
   font-size: 1.5em;
   font-weight: lighter;
-  color: #000; /* your desired text color */
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* white outline */
+  color: rgb(0, 0, 148); /* your desired text color */
+  text-shadow:
+    0 0 2px white,
+    0 0 3px white;
 }
 
 .subt{
@@ -126,7 +128,10 @@ margin: 0;
 
 
 
-
+@font-face {
+  font-family: 'Balloons'; /* Give a name to your font */
+  src: url('InflateptxChrome-X3oPg.ttf') format('truetype'); /* Path to the font file */
+}
 
 
 

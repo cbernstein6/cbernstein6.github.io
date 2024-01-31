@@ -18,7 +18,9 @@ h1, h2 {
 }
 
 
-
+/*input, textarea {
+  width: 60vw;
+}*/
 
 form {
   background: #333;
