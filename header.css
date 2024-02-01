@@ -133,7 +133,7 @@ header nav a:hover {
 
 .insta-logo:hover {
   cursor: pointer;
-  content: url(rainbow_insta.jpeg);
+  content: url(img/rainbow_insta.jpeg);
   transform: scale(1.12);
 }
 
@@ -144,7 +144,7 @@ header nav a:hover {
 
 .yelp-logo:hover{
   cursor: pointer;
-  content: url(redYelp.png);
+  content: url(img/redYelp.png);
   transform: scale(1.25);
 }
 
@@ -154,7 +154,7 @@ header nav a:hover {
 
 .facebook-logo:hover {
   cursor: pointer;
-  content: url(blue_facebook.jpeg);
+  content: url(img/blue_facebook.jpeg);
   transform: scale(1.2);
 }
 
@@ -164,7 +164,7 @@ header nav a:hover {
 
 .twitter-logo:hover {
   cursor: pointer;
-  content: url(twitterb.png);
+  content: url(img/twitterb.png);
   transform: scale(1.6);
   transition: 0.3s;
 }
