@@ -84,7 +84,7 @@
   <div class="slider" style="position: relative;">
     <h2 class="fontedtitle" style="position: absolute; top: 15%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Welcome To Balloon City</h2>
     <h2 class="fontedtitle" style="position: absolute; top: 23%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Of Boston Inc!</h2>
-    <h3 class="subtitle">Click through our pictures!</h3>
+    <button class="intro-button" id="go-to-gallery">View Products</button>
     <img class="slider-image sty" src="img/new_org.jpeg" alt="Organic Balloon" />
     <div class="slider-buttons">
       <div class="prev">
@@ -102,6 +102,12 @@
    
 
 <script>
+
+  document.getElementById('go-to-gallery').addEventListener('click', function() {
+    document.getElementById('gallery-section').scrollIntoView();
+  });
+
+
   let imagesDesktop = [
   'img/new_org.jpeg',
   'img/pinkfront.jpg',
@@ -168,7 +174,7 @@ nextButton.addEventListener('click', () => {
 
 
 
-<section class="gallery-section">
+<section class="gallery-section" id="gallery-section">
   <h2 class="fontedtitle" style="color: rgb(242, 149, 35);">Our Portfolio</h2>
   <div class="gallery-container">
     <div class="gallery-row">
