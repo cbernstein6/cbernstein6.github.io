@@ -16,8 +16,6 @@ header img {
 
 header nav {
   margin-right: 50px;
-  
-  
 }
 
 header nav ul {
@@ -133,7 +131,7 @@ header nav a:hover {
 
 .insta-logo:hover {
   cursor: pointer;
-  content: url(rainbow_insta.jpeg);
+  content: url(img/rainbow_insta.jpeg);
   transform: scale(1.12);
 }
 
@@ -144,7 +142,7 @@ header nav a:hover {
 
 .yelp-logo:hover{
   cursor: pointer;
-  content: url(redYelp.png);
+  content: url(img/redYelp.png);
   transform: scale(1.25);
 }
 
@@ -154,7 +152,7 @@ header nav a:hover {
 
 .facebook-logo:hover {
   cursor: pointer;
-  content: url(blue_facebook.jpeg);
+  content: url(img/blue_facebook.jpeg);
   transform: scale(1.2);
 }
 
@@ -164,7 +162,7 @@ header nav a:hover {
 
 .twitter-logo:hover {
   cursor: pointer;
-  content: url(twitterb.png);
+  content: url(img/twitterb.png);
   transform: scale(1.6);
   transition: 0.3s;
 }
@@ -665,7 +663,7 @@ nav li {
   }
 
   header img {
-    width: 135px; /* Adjusted logo size */
+    width: 200px; /* Adjusted logo size */
   }
 
   header nav a, footer nav a, .contact-info a {
@@ -677,8 +675,8 @@ nav li {
   }
 
   .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
-    width: 28px;  /* Adjusted icon sizes */
-    height: 28px;
+    width: 32px; 
+    height: auto;
   }
 
   .footer-logo {
@@ -716,10 +714,7 @@ nav li {
 
 
 
-  footer {
-    background-color: #bebebe;
-    color: #fff;
-  }
+  
 
   .wrapper {
     padding: 1rem;
@@ -736,7 +731,7 @@ nav li {
   }
 
   .footer-logo img {
-    max-width: 100px;
+    
     height: auto;
   }
 
@@ -757,9 +752,14 @@ nav li {
   nav ul li {
     margin-bottom: 8px;
   }
-
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Aligns items vertically */
+  align-items: flex-start;
+}
   .contact-info h4, .contact-info p {
-    margin: 4px 0;
+    margin: 14px 20px 10px 0;
+    
   }
 
 
@@ -886,7 +886,16 @@ nav li {
     text-align: center;
 }
 
+.contact-info{
+  position: relative;
+}
+
 .contact-info h4 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    bottom: 0px;
+}
+.contact-info p:last-child {
+  padding-right: 40px;
+  color: #0070c9;
 }
 }
