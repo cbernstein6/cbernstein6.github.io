@@ -48,3 +48,10 @@
     visibility: visible;
 }
 
+@media screen and (max-width: 767px) {
+  .gallery-column {
+    height: 70vh;
+    width: 85vw;
+    
+  }
+}
