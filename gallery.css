@@ -41,7 +41,11 @@
 
 .text-overlay p {
     font-size: 35px; /* increase the text size to make it more obvious */
-    /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* black outline */
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
   
 .gallery-column:hover .text-overlay {
