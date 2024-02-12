@@ -51,7 +51,6 @@ header nav a:hover {
 
 
 .dropdown {
-  z-index: 2;
   position: relative;
   display: inline-block;
   border-bottom: 10px solid transparent; /* Invisible bridge */
@@ -423,7 +422,13 @@ ul.holiday-style li a:hover {
 
 }
 
-
+.inctext {
+  position: absolute; 
+  top: 23%; 
+  left: 0%; 
+  color: rgb(0, 0, 148); 
+  z-index: 1;
+}
 
 
 
@@ -658,117 +663,159 @@ nav li {
 
 
 
-@media only screen and (max-width: 426px) {
 
+
+@media (min-width: 322px) and (max-width: 410px) {
+  .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
+    width: 8%;  /* Slightly smaller icons */
+    height: auto;
+  }
+  .inctext{
+    top: 27%;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 600px) {
+  .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
+    width: 7%;  /* Slightly smaller icons */
+    height: auto;
+  }
+}
+@media (min-width: 410px) and (max-width: 509px) {
+.inctext{
+  top: 28%;
+}
+}
+
+@media (min-width: 322px) and (max-width: 600px) {
+  .dropdown {
+    border-bottom: 0px solid transparent; /* Invisible bridge */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
   header {
-    padding: 7px;  /* Adjusted padding */
+    padding: 5px;  /* Reduced padding */
   }
 
   header img {
-    width: 200px; /* Adjusted logo size */
+    width: 40%; /* Smaller logo for smaller devices */
+    height: auto;
   }
 
   header nav a, footer nav a, .contact-info a {
-    font-size: 13px;  /* Adjusted font size */
+    font-size: 12px;  /* Smaller font size */
   }
 
-  .yelp-logo {
-    margin-left: 7px;  /* Adjusted margin */
+  .yelp-logo{
+    margin-left: 5px;  /* Reduced margin */
   }
 
-  .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
-    width: 32px; 
-    height: auto;
-  }
+  
 
-  .footer-logo {
-    width: 135px;  /* Adjusted logo size */
-    margin-right: 110px;  /* Adjusted margin */
+  .footer-logo{
+    width: 120px;  /* Smaller logo for smaller devices */
+    margin-right: 100px;  /* Reduced margin */
   }
 
   footer {
-    padding: 7px;  /* Adjusted padding */
+    padding: 5px;  /* Reduced padding */
   }
 
   footer nav li {
-    margin: 0 4px;  /* Adjusted spacing between items */
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin: 0 3px; /* Less spacing between items */
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
 
   .contact-info h4 {
-    font-size: 17px;  /* Adjusted font size */
+    font-size: 16px;  /* Slightly smaller font size */
   }
 
   .social-media-icon {
-    margin-right: 12px;  /* Adjusted margin */
+    margin-right: 10px;  /* Reduced margin */
   }
 
-  .social-media {
-    margin-bottom: 7px;  /* Adjusted margin */
+  .social-media{
+    margin-bottom: 5px;  /* Reduced margin */
   }
 
- 
-  
-
-
-
-
-
-
-  
-
-  .wrapper {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .dropdown-content {
+    /* Potentially other adjustments based on its content */
   }
 
-  .top-row, .bottom-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-logo img {
-    
-    height: auto;
-  }
-
-  .social-media {
-    margin-top: 1rem;
-  }
-
-  .social-media-icon img {
-    width: 24px;
-    margin-right: 8px;
-  }
-
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  nav ul li {
-    margin-bottom: 8px;
-  }
-.contact-info {
-  display: flex;
-  flex-direction: column; /* Aligns items vertically */
-  align-items: flex-start;
+  footer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
-  .contact-info h4, .contact-info p {
-    margin: 14px 20px 10px 0;
-    
-  }
 
+.wrapper {
+    width: 100%;
+    max-width: 426px;
+    margin: 0 auto;
+}
 
-  
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
 
-  /* ... Add or modify additional styles as needed ... */
+/* Top Row Styles */
+.top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo, .social-media {
+    margin-bottom: 20px;
+}
+
+.social-media-icon {
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+.footer-dropdown-content {
+    display: none;
+}
+
+.footer-dropdown:hover .footer-dropdown-content {
+    display: block;
+}
+
+/* Bottom Row Styles */
+.bottom-row {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info{
+  position: relative;
+}
+
+.contact-info h4 {
+    margin-bottom: 0px;
+    bottom: 0px;
+}
+.contact-info p:last-child {
+  padding-right: 40px;
+  color: #0070c9;
+}
 }
 
 
@@ -900,4 +947,5 @@ nav li {
   padding-right: 40px;
   color: #0070c9;
 }
+
 }
