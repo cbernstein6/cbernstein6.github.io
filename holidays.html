@@ -169,7 +169,7 @@
           </a>
         </div>
       </div>
-      </div>
+    </div>
         
 
       <div id="StPatty" class="holiday">
@@ -288,6 +288,7 @@
               </div>
             </a>
           </div>
+        </div>
         </div>
     
       
@@ -523,7 +524,7 @@
             </a>
           </div>
         </div>
-        </div>
+        
 
         <div class="row">
           <div class="col">
@@ -600,7 +601,7 @@
             </a>
           </div>
         </div>
-
+      </div>
 
 
       <div id="Easter" class="holiday">
@@ -1212,6 +1213,9 @@
       
 
         function showHoliday(value) {
+          window.onload = function() {
+            showHoliday('Valentines');
+        };
           // Get all elements with class="holiday" and hide them
           var holidays = document.getElementsByClassName("holiday");
           for (var i = 0; i < holidays.length; i++) {
@@ -1221,5 +1225,10 @@
           // Show the specific tab content
           document.getElementById(value).style.display = "block";
         }
+
+        // window.onload = function() {
+        //     showHoliday('Valentines');
+        // };
+
       </script>
       </html>
