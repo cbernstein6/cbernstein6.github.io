@@ -79,7 +79,7 @@
 
 
 #testimonials {
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 50px;
   max-height: 100vh;
 }
@@ -93,8 +93,8 @@
 }
 
 .testimonial {
-  max-width: 700px;
-  min-height: 280px;
+  max-width: 35vw;
+  min-height: 25vh;
   max-height: 280px;
   text-align: center;
   margin: 20px;
@@ -110,8 +110,8 @@
 }
 
 .testimonial img {
-  max-width: 100px;
-  border-radius: 50%;
+  max-width: 200px;
+  border-radius: 30%;
 }
 
 .testimonial h3 {
@@ -121,7 +121,7 @@
 }
 
 .testimonial h3, .testimonial p{
-  color: white;
+  color: black;
 }
 
 .slider-arrows {
@@ -131,7 +131,7 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  margin-left: 200px;
+  margin-right: 305px;
 }
 
 .slider-arrows button {
@@ -153,8 +153,9 @@
 }
 
 .yelp-word{
-  height: 150px;
+  height: 15vw;
   width: auto;
+  margin-right: 30px;
 }
 
 .test_subt {
