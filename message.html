@@ -63,23 +63,33 @@
     
   </header>
     
-      <h2 class="fontedtitle" style="color:#E82127;">Contact Us</h2>
+      <h2 class="fontedtitle" style="color:#E82127; padding-bottom: 0px;">Contact Us</h2>
       
-      
+      <div class="centered-container-parent">
       <form action="https://formspree.io/f/mqkovjle" method="POST">
         <h1 id="contact_title">Send Us a Message</h1>
-        <label for="name">Your Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-    
-        <label for="email">Your Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-    
-        <label for="message">Your Message:</label><br>
-        <textarea id="message" name="message"></textarea><br>
-    
-        <input type="submit" value="Submit">
+        
+        <div class="form-row" style="margin-bottom: 30px; margin-top: 50px;">
+          <div class="form-field long-input">
+            <input type="text" id="name" name="name" placeholder="Your Name"><br>
+          </div>
+
+          <div class="form-field long-input">
+            <input type="email" id="email" name="email" placeholder="Your Email"><br>
+          </div>
+        </div>
+
+        <textarea id="message" name="message" placeholder="Your Message" style="margin-bottom: 10px;"></textarea><br>
+
+        
+        <div class="submit-button-container">
+          <input type="submit" value="Submit" id="submit-button" style="width: 90px;">
+        </div>
+        
     </form>
+    </div>
       
+    
     
         </body>
         <footer>

@@ -16,7 +16,75 @@ h1, h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7.5px; /* Set the side margin to half of the desired gap to ensure the gap between elements is 15px */
+}
 
+.short-input {
+  width: calc(25% - 15px); /* Short input, 4 boxes per row */
+}
+
+.medium-input {
+  width: calc(33.3333% - 15px); /* Medium input, 3 boxes per row */
+}
+
+.long-input {
+  width: calc(50% - 15px); /* Long input, 2 boxes per row */
+}
+
+.full-input {
+  width: 100%; /* Full input, 1 box per row */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7.5px; /* Set the side margin to half of the desired gap to ensure the gap between elements is 15px */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%;  /* Full width of each row should be 80% at maximum */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form{
+  width: 50%; 
+  height: 35vh;
+}
+
+.centered-container-parent {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 60vh; /* Use the full height of the viewport */
+  width: 100vw; /* Use the full width of the viewport */
+}
+
+
+
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+}
+
+#submit-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 50px; /* Circular on the left, straight on the right */
+  background-color: #f00; /* Adjust background color as needed */
+  color: #fff; /* Adjust text color as needed */
+  cursor: pointer;
+  outline: none;
+}
+
+#submit-button:hover {
+  background-color: #c00; /* Darker shade on hover for visual feedback */
+}
 
 /*input, textarea {
   width: 60vw;
@@ -32,7 +100,7 @@ form {
   color: #fff;
   font-size: 1.8em;
   text-align: center;
-  margin-bottom: 30px;
+  
 }
 
 label {
@@ -76,7 +144,9 @@ input[type="submit"]:hover {
 
 @media (max-width: 600px) {
   
-
+  .short-input, .medium-input, .long-input, .full-input {
+    width: 100%; 
+  }
   form {
     padding: 10px;
   }

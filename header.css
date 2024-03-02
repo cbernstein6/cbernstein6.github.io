@@ -430,7 +430,9 @@ ul.holiday-style li a:hover {
 }
 
 
-
+.contact-info p, .contact-info a {
+  display: block !important;
+}
 
 
 @media (min-width: 601px) and (max-width: 1400px) {
@@ -608,9 +610,25 @@ nav li {
 
 @media only screen and (max-width: 600px) {
 
-  .dropdown .dropbtn:not([id="productsLabel"]).hide {
-    visibility: hidden; 
-    /* Using visibility:hidden instead of display:none to ensure layout remains unchanged */
+  .bottom-row .contact-info #address,
+    .bottom-row .contact-info p:not(#phone):not(:has(> a[href^="mailto:"])) {
+        display: none;
+    }
+
+    /* Ensure the email and phone stack vertically */
+    .bottom-row .contact-info,
+    .bottom-row .contact-info p,
+    .bottom-row .contact-info a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom-row .contact-info #phone,
+.bottom-row .contact-info p:not(#address):not(:has(> a[href^="mailto:"])) {
+    margin: 0 auto; /* Resets margin and centers them */
+    padding: 0; /* Resets padding */
+    text-align: center; /* Ensures text is centered */
 }
 
 
@@ -638,7 +656,7 @@ nav li {
   }
 
   header nav a {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .hamburger {
@@ -688,6 +706,12 @@ nav li {
 }
 
 @media (min-width: 322px) and (max-width: 600px) {
+ 
+  .contact-info #address, .contact-info #phone {
+    text-align: center;
+    display: block;
+  }
+ 
   .dropdown {
     border-bottom: 0px solid transparent; /* Invisible bridge */
   margin-top: 0px;
@@ -703,8 +727,12 @@ nav li {
   }
 
   header nav a, footer nav a, .contact-info a {
-    font-size: 12px;  /* Smaller font size */
+    font-size: 18px;  /* Smaller font size */
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
+
+
 
   .yelp-logo{
     margin-left: 5px;  /* Reduced margin */
