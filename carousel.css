@@ -95,7 +95,7 @@
 .testimonial {
   max-width: 35vw;
   min-height: 25vh;
-  max-height: 280px;
+  max-height: 45vh;
   text-align: center;
   margin: 20px;
   padding: 20px;
@@ -107,6 +107,7 @@
   transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
   transform: translateY(20px);
   opacity: 0;
+
 }
 
 .testimonial img {
@@ -122,6 +123,7 @@
 
 .testimonial h3, .testimonial p{
   color: black;
+  flex-wrap: wrap;
 }
 
 .slider-arrows {
@@ -131,11 +133,10 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  margin-right: 305px;
 }
 
 .slider-arrows button {
-  background-color: #ff0000;
+  background-color: #3c8c24;
   color: rgb(0, 0, 0);
   border: none;
   padding: 10px 20px;
@@ -167,7 +168,12 @@
   margin: auto;
 }
 
-
+.boxplusbutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -189,5 +195,6 @@
     margin: auto;
     width: 200px; /* Adjust this as per your requirement */
   }
+
 }
 
