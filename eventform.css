@@ -7,7 +7,7 @@ body {
   
 
 form {
-    background: #333;
+    background: #ac2a2a;
     padding: 20px;
     border-radius: 5px;
     width: 90%;
@@ -15,7 +15,10 @@ form {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px; 
+    
   }
+
+  
 
   h1, h2 {
     color: #fff;
