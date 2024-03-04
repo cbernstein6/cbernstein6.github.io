@@ -667,14 +667,28 @@ nav li {
     z-index: 0;
 }
   
+.footer-logo img{
+  margin-left: 45px;
+  width: 100%;
+  height: auto;
+  margin-left: 45px;
+  padding: 0;
+  border: none;
+}
   
+.inctext {
+  margin-top: -30px;
+}
 
   
 }
 
 
-
-
+@media (min-width: 766px) and (max-width: 813px) {
+  .inctext {
+    margin-top: 30px;
+  }
+}
 
 
 
@@ -685,11 +699,14 @@ nav li {
     height: auto;
   }
   .inctext{
-    top: 27%;
+    top: 31%;
+  }
+  .intro-button {
+    top: 235px;
   }
 }
 
-@media (min-width: 410px) and (max-width: 600px) {
+@media (min-width: 411px) and (max-width: 600px) {
   .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
     width: 7%;  /* Slightly smaller icons */
     height: auto;
@@ -698,10 +715,14 @@ nav li {
     /* margin-right: 30px; */
     padding: 0;
   }
+
+  .intro-button {
+    top: 235px;
+  }
 }
-@media (min-width: 410px) and (max-width: 509px) {
+@media (min-width: 410px) and (max-width: 510px) {
 .inctext{
-  top: 28%;
+  top: 30%;
 }
 }
 
@@ -850,6 +871,12 @@ nav li {
 
 @media only screen and (max-width: 321px) {
 
+  .intro-button {
+    top: 235px;
+  }
+  .inctext {
+    top: 31%;
+  }
   header {
     padding: 5px;  /* Reduced padding */
   }

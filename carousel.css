@@ -184,10 +184,27 @@
   .slider{
     height: 87vh;
   }
+
+
   .testimonial {
     height: 250px;
     overflow: auto;  /* Add this */
+    max-width: 70vw;
+    
   }
+  .boxplusbutton {
+    display: flex; 
+  width: 100%;
+    
+  }
+  .testimonial img{
+    width: 150px;
+  }
+
+  .testimonials-container {
+    width: 90vw;
+  }
+
   .test_subt {
     display: block;
   }
@@ -195,6 +212,14 @@
     margin: auto;
     width: 200px; /* Adjust this as per your requirement */
   }
+
+
+  #testimonials {
+    margin-top: 40px;
+    padding: 0px;
+    max-height: 100vh;
+  }
+  
 
 }
 
