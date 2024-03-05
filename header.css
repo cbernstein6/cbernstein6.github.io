@@ -702,10 +702,10 @@ nav li {
     height: auto;
   }
   .inctext{
-    top: 26%;
+    top: 28%;
   }
   .intro-button {
-    top: 300px;
+    top: 315px;
   }
 }
 
@@ -727,7 +727,7 @@ nav li {
 }
 @media (min-width: 411px) and (max-width: 510px) {
 .inctext{
-  top: 28%;
+  top: 29%;
 }
 }
 
