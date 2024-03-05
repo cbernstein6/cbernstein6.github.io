@@ -101,7 +101,7 @@ margin: 0;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 80vh; /* change this to fit your need */
+  height: 95vh; /* change this to fit your need */
   position: relative;
   color: white;
   text-align: center;
@@ -143,16 +143,55 @@ margin: 0;
 
 
 
+.secondary-title {
+  font-size: 55px; 
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white; /* Text color */
+  
+}
 
 
 
 
 
 
+.main-title {
+  font-size: 55px; 
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white; /* Text color */
+  
+}
 
+.purple-outline {
+  
+  text-shadow: 
+    -1px -1px 0 #000094,  
+      1px -1px 0 #000094,
+    -1px  1px 0 #000094,
+      1px  1px 0 #000094;
+}
 
-
-
+.white-outline {
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+      1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+      1px  1px 0 #ffffff;
+}
 
 
 
@@ -203,15 +242,26 @@ margin: 0;
   
   .text-overlay {
     border-radius: 0;
+    
   }
   
   .text-overlay p {
-    font-size: 1rem;
+    font-size: 35px;
   }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+
 }
   
 
-  
+  @media (min-width: 387px) and (max-width: 470px) {
+    .main-title {
+      font-size: 44px;
+    }
+  }
   
   
 

@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="balloons,boston,balloon decorating, gift baskets, novelties, balloon bouquets, shining stars, party favors, balloon centerpieces, balloon decorations,custom imprinting ">
-    <meta name="description" content="Balloons for all occasions,  Event Decorating, Deliveries, custom imprinting & more,  in the Boston area">
+    <meta name="description" content="Balloons for all occasions, Event Decorating, Deliveries, custom imprinting & more, in the Boston area">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balloon City of Boston - Home</title>
     <link rel="stylesheet" type="text/css" href="MessCss.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="carousel.css">
     <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preload" as="image" href="new_org.jpeg">
@@ -54,8 +56,7 @@
                   <a href="organics.html">Organics</a>
                   <a href="holidays.html">Holiday Decor</a>
                   <a href="nonlatex.html">Non-latex</a>
-                  <a href="sports.html">Sports</a>
-                  <a href="seasons.html">Seasonal</a>
+                  <a href="sports.html">Sports</a> 
                   <a href="drop.html">Balloon Drops</a>
                   <a href="outdoor.html">Outdoor</a>
               </div>
@@ -84,8 +85,8 @@
 <body>
 <div class="intro_area">
   <div class="slider" style="position: relative;">
-    <h2 class="fontedtitle welcome" style="position: absolute; top: 15%; left: 0%; color: rgb(0, 0, 148); z-index: 1;">Welcome To Balloon City</h2>
-    <h2 class="fontedtitle inctext">Of Boston Inc!</h2>
+    <h2 class="main-title purple-outline" style="position: absolute; top: 15%; left: 0%; color: white; z-index: 1;">Welcome To Balloon City</h2>
+    <h2 class="main-title inctext white-outline">Of Boston Inc!</h2>
     <button class="intro-button" id="go-to-gallery">View Products</button>
     <img class="slider-image sty" src="img/new_org.jpeg" alt="Organic Balloon" />
     <div class="slider-buttons">
@@ -112,18 +113,18 @@
 
   let imagesDesktop = [
   'img/new_org.jpeg',
-  'img/pinkfront.jpg',
-  'img/slide_arch.jpeg',
+  'img/outdoor6.jpg',
+  'img/arch8.jpeg',
   'img/wall1.png',
-  'img/ceilings.jpg',
+  'img/column11.jpeg',
 ];
 
 let imagesMobile = [
   'img/new_org.jpeg',
-  'img/bouquet3.jpg',
-  'img/bouquet9.jpg',
-  'img/bouquet11.jpg',
-  'img/bouquet3.jpg',
+  'img/organic14.jpg',
+  'img/topiary18.jpg',
+  'img/center27.jpg',
+  'img/wedding.jpg',
 ];
 
 let images = window.innerWidth <= 768 ? imagesMobile : imagesDesktop;
@@ -174,7 +175,58 @@ nextButton.addEventListener('click', () => {
 
 
 
+<script>
+  const galleryImages = {
+    Bouquets: {
+      mobile: 'img/7-16s.jpeg',
+      desktop: 'img/bouquet_cover.png'
+    },
+    Centerpieces: {
+      mobile: 'img/center22.jpg',
+      desktop: 'img/center_cover.png'
+    },
+    Topiaries: {
+      mobile: 'img/topiary15.jpg',
+      desktop: 'img/topiary1.jpeg'
+    },
+    Arches: {
+      mobile: 'img/arch14.jpg', // Replace with actual mobile image for Arches
+      desktop: 'img/arch8.jpeg'
+    },
+    Walls: {
+      mobile: 'img/wall3.png', // Replace with actual mobile image for Walls
+      desktop: 'img/wall4.png'
+    },
+    Columns: {
+      mobile: 'img/column10.jpeg', // Replace with actual mobile image for Columns
+      desktop: 'img/outdoor12.1.jpg'
+    },
+    Organics: {
+      mobile: 'img/organic8.jpg', // Replace with actual mobile image for Organics
+      desktop: 'img/organic_cover.png'
+    }
+  // Add other gallery items as needed
+};
 
+  document.addEventListener('DOMContentLoaded', function() {
+      function updateGalleryImages() {
+        const screenWidth = window.innerWidth;
+        document.querySelectorAll('.gallery-section .gallery-column img').forEach(img => {
+          const itemType = img.alt;
+          if (galleryImages[itemType]) {
+            img.src = screenWidth <= 768 ? galleryImages[itemType].mobile : galleryImages[itemType].desktop;
+          }
+        });
+      }
+
+      // Update images on initial load
+      updateGalleryImages();
+
+      // Update images on window resize
+      window.addEventListener('resize', updateGalleryImages);
+  });
+
+</script>
 
 <section class="gallery-section" id="gallery-section">
   <h2 class="fontedtitle" style="color: rgb(242, 149, 35);">Our Portfolio</h2>
@@ -213,7 +265,7 @@ nextButton.addEventListener('click', () => {
     <div class="gallery-row">
       <div class="gallery-column">
         <a href="arches.html">
-          <img src="img/arch8.jpeg" alt="Bouquets">
+          <img src="img/arch8.jpeg" alt="Arches">
           <div class="text-overlay">
             <p>Arches</p>
           </div>
@@ -252,6 +304,8 @@ nextButton.addEventListener('click', () => {
 </section>
 
 
+
+
 <div class="holiday-section">
   <div class="centered">Holiday Decor</div>
   <button class="shop-button" onclick="window.location.href = 'holidays.html';">Shop Now</button>
@@ -260,7 +314,7 @@ nextButton.addEventListener('click', () => {
 
 <section id="testimonials">
   <div class="testimonials-container">
-    <h2 class="fontedtitle" style="color: #241c8c; margin-top: -40px;">What our customers are saying</h2>
+    <h2 class="secondary-title" style="color: #241c8c; margin-top: -40px;">What Our Customers Are Saying</h2>
     <a href="https://www.google.com/maps/place/Balloon+City-Boston/@42.3864304,-71.6167025,10z/data=!4m10!1m2!2m1!1sballoon+city!3m6!1s0x89e371d6a149fe1f:0xf90c16a755a60e4c!8m2!3d42.3864304!4d-71.0069613!15sCgxiYWxsb29uIGNpdHlaDiIMYmFsbG9vbiBjaXR5kgENYmFsbG9vbl9zdG9yZeABAA!16s%2Fg%2F1tlwb2gb?entry=ttu" target="_blank">
         <img src="img/google-reviews.jpg" alt="Reviews" class="yelp-word">
     </a>
@@ -275,31 +329,31 @@ nextButton.addEventListener('click', () => {
     <div class="testimonial">
       <img src="img/logo.png" alt="Balloon City Logo">
       <p>"I would highly recommend this place. I have had many parties and the quality of the balloons sold speaks volumes. The ladies are always courteous even on the busiest of times. They are always willing to help. I can honestly say I will always use them for any one of my future parties because they strive to be the best as they represent and serve our East Boston Community as well as other surrounding communities. I admire these women for their constant dedication to every detail in order to make everyone’s event, party or celebration spectacular. Because that’s what they do and they have been doing it for decades."</p>
-      <h3>Mary</h3>
+      <h3>Mary 8/23</h3>
     </div>
 
     <div class="testimonial">
       <img src="img/logo.png" alt="Balloon City Logo">
       <p>"Went here yesterday for the first time. I was helping a friend find the number balloons (18) for a birthday party. When we walked in, we were greeted by a very friendly lady who shared her knowledge of all things balloons and helium with us. She was so nice, she even threw in a free small balloon for my son because he waited patiently. I will definitely support this small business again in the future."</p>
-      <h3> Ryan.</h3>
+      <h3> Ryan 3/23</h3>
     </div>
 
     <div class="testimonial">
       <img src="img/logo.png" alt="Balloon City Logo">
       <p>"Owner goes above and beyond for customers. Great prices and experience! Highly recommended."</p>
-      <h3>3/4/22 Falastin</h3>
+      <h3>Falastin 3/22</h3>
     </div>
 
     <div class="testimonial">
       <img src="img/logo.png" alt="Balloon City Logo">
       <p>"There are not enough words to adequately describe Balloon City, Christine and her staff, but I will try to do them justice.....I have used them for multiple family events (both large and small) and they have NEVER disappointed me. The staff is courteous and kind, always willing to go the extra mile to ensure I am getting exactly what I envision. Delivery is always on time, and set up is perfect. Whenever I walk in to the venue I am completely awestruck.....their balloon arrangements really help set the stage and mood for the occasion. Both young and old always comment on how pretty the balloon arrangements are, and how much they like them.</p>
-      <h3>June 2021 - Tanya F.</h3>
+      <h3>Tanya 6/21</h3>
     </div>
 
     <div class="testimonial">
       <img src="img/logo.png" alt="Balloon City Logo">
       <p>"If I could give this establishment a 10, I would do so in a heartbeat. Balloon City offers old-time customer service...no having to send in your automated order--you can actually TALK to someone there and they will help you with your specialized order. I was calling them from California for same-day delivery in Boston, and once I placed the order, it was ready 15 minutes to be delivered. And the prices! so incredibly reasonable. Even though the prices and products are great, it's the customer service that is truly phenomenal. HIGHLY recommend for anyone in the Boston area!"</p>
-      <h3>10/15/20 Janis A.</h3>
+      <h3> Janis 10/20</h3>
     </div>
   
 
@@ -392,6 +446,8 @@ nextButton.addEventListener('click', () => {
                 <a href="holidays.html">Holiday Decor</a>
                 <a href="nonlatex.html">Non-latex</a>
                 <a href="sports.html">Sports</a>
+                <a href="drop.html">Balloon Drops</a>
+                <a href="outdoor.html">Outdoor</a>
               </div>
             </li>
             <li class="footer-dropdown">

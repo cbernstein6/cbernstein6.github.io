@@ -36,6 +36,10 @@ form {
     text-align: left;
   }
 
+  .items-container label {
+    margin-top: 5px;
+  }
+
   #contact_title {
     color: #fff;
     font-size: 1.8em;

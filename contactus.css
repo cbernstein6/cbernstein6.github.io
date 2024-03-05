@@ -215,12 +215,21 @@ input[type="submit"]:hover {
 }
 
 .checkbox-row {
-  
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+
 .checkbox-row input[type="checkbox"] {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 
