@@ -62,7 +62,7 @@ form{
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 60vh; /* Use the full height of the viewport */
+  height: 70vh; /* Use the full height of the viewport */
   width: 100vw; /* Use the full width of the viewport */
 }
 
@@ -92,7 +92,8 @@ form{
 
 form {
   background: #333;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 60px;
   border-radius: 5px;
 }
 
@@ -143,13 +144,14 @@ input[type="submit"]:hover {
 
 
 @media (max-width: 600px) {
-  
   .short-input, .medium-input, .long-input, .full-input {
     width: 100%; 
   }
+
   form {
-    padding: 10px;
+    padding-bottom: 160px;
   }
+
 
   #contact_title {
     font-size: 1.5em;

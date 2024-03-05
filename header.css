@@ -156,6 +156,7 @@ header nav a:hover {
 
 .twitter-logo {
   transform: scale(1.22);
+  margin-right: 5px;
 }
 
 .twitter-logo:hover {
@@ -227,7 +228,7 @@ footer nav a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 90%;
   padding: 5px 0;
   margin-top: 5px;
 }
@@ -244,13 +245,13 @@ footer nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
 }
 
 .contact-info p {
   color: #666;
   line-height: 1.6;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .contact-info a {
@@ -433,7 +434,11 @@ ul.holiday-style li a:hover {
 .contact-info p, .contact-info a {
   display: block !important;
 }
-
+@media (min-width: 701px) and (max-width: 1500px) {
+  .twitter-logo {
+    margin-right: 5px;
+  }
+}
 
 @media (min-width: 601px) and (max-width: 1400px) {
 
@@ -676,9 +681,7 @@ nav li {
   border: none;
 }
   
-.inctext {
-  margin-top: -30px;
-}
+
 
   
 }
@@ -699,12 +702,14 @@ nav li {
     height: auto;
   }
   .inctext{
-    top: 31%;
+    top: 26%;
   }
   .intro-button {
-    top: 235px;
+    top: 300px;
   }
 }
+
+
 
 @media (min-width: 411px) and (max-width: 600px) {
   .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
@@ -717,12 +722,12 @@ nav li {
   }
 
   .intro-button {
-    top: 235px;
+    /* top: 235px; */
   }
 }
-@media (min-width: 410px) and (max-width: 510px) {
+@media (min-width: 411px) and (max-width: 510px) {
 .inctext{
-  top: 30%;
+  top: 28%;
 }
 }
 
@@ -747,7 +752,16 @@ nav li {
     height: auto;
   }
 
-  header nav a, footer nav a, .contact-info a {
+  .dropdown-content a {
+    font-size: 14px;  /* Smaller font size */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    margin-right: 45px;
+  }
+
+
+  footer nav a, .contact-info a {
     font-size: 14px;  /* Smaller font size */
     margin-top: 5px;
     margin-bottom: 5px;

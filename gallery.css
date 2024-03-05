@@ -36,17 +36,18 @@
     width: 100%;
     color: #fff;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px; 
 }
 
-.text-overlay p {
-    font-size: 35px; /* increase the text size to make it more obvious */
+/* .text-overlay p {
+    font-size: 35px; 
     text-shadow: 
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
-}
+} */
   
 .gallery-column:hover .text-overlay {
     visibility: visible;
