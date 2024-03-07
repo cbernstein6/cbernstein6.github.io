@@ -696,16 +696,19 @@ nav li {
 
 
 
-@media (min-width: 322px) and (max-width: 410px) {
+@media (min-width: 322px) and (max-width: 610px) {
   .insta-logo, .facebook-logo, .twitter-logo, .yelp-logo {
     width: 8%;  /* Slightly smaller icons */
     height: auto;
   }
   .inctext{
-    top: 28%;
+    top: 32%;
   }
   .intro-button {
-    top: 315px;
+    top: 45%;
+  }
+  .title-position {
+    top: 18%;
   }
 }
 
@@ -725,11 +728,7 @@ nav li {
     /* top: 235px; */
   }
 }
-@media (min-width: 411px) and (max-width: 510px) {
-.inctext{
-  top: 29%;
-}
-}
+
 
 @media (min-width: 322px) and (max-width: 600px) {
  
