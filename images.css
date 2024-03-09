@@ -78,6 +78,7 @@
   }
 
   .col {
+    min-width: 35vw;
     margin: 5px;
   }
 
