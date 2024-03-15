@@ -234,8 +234,11 @@ input[type="submit"]:hover {
 
 
 
-
-
+@media (min-width: 601px) and (max-width: 983px) {
+  .button-container {
+    margin-top: 150px;
+  }
+}
 
 @media only screen and (max-width: 600px) {  /* Small devices (portrait tablets and large phones, 600px and under) */
 
