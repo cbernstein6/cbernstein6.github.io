@@ -194,7 +194,9 @@ margin: 0;
 }
 
 
-
+.image-finder {
+  display: none;
+}
 
   
   /* media query for smaller screens */
