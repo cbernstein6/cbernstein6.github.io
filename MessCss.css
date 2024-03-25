@@ -244,7 +244,15 @@ margin: 0;
   }
 
   .holiday-section {
-    /* background: url('img/winter8.jpg') no-repeat center center fixed; */
+     background: url('img/christmas4.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 95vh; /* change this to fit your need */
+    position: relative;
+    color: white;
+    text-align: center;
   }
 
   
