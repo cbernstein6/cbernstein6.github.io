@@ -77,7 +77,10 @@ a:hover {
 
 .centered-button.orange-button button {
   background-color: #ff8c00; /* This is a generic orange, change to desired orange color */
-  margin-top: 30px;
+}
+
+.spacer {
+  height: 30px;
 }
 
 .centered-button.orange-button button:hover {
